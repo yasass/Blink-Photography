@@ -1,0 +1,219 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+/* || GENERAL STYLES */
+
+body {
+  overflow-x: hidden;
+  background-color: #BBBDC1;
+}
+@font-face {
+  font-family: match;
+  src: url("../font/asenine_.ttf");
+}
+h1 {
+  font-family: "match";
+  font-size: 4rem;
+  text-transform: uppercase;
+  top: 5vh;
+  display: inline;
+  color: #322D6A;
+}
+h2 {
+  line-height: 3rem;
+  color: #453C86;
+}
+
+/* || SITEWIDE */
+
+.bg-purple{
+  background-color: #453C86;
+  color: #FFFFFF;
+}
+.btn {
+  background-color: #FFFFFF;
+  border-color: #EECC61;
+  border-radius: 0.3rem;
+  color: #453C86;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.bullet {
+  color: #EECC61;
+  font-family: match;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0 0.7rem 0.7rem 0rem;
+}
+.footers {
+  padding-left:0.5rem;
+}
+.footer1 {
+  font-size: 0.7rem;
+  line-height: 1.2;
+  margin-top: 40%;
+}
+.footer2 {
+  font-size: 0.5rem;
+  line-height: 1.3;
+  bottom: 0;
+  margin-top:5%;
+}
+.logo {
+  width: 14rem;
+  margin-top: 20%;
+}
+.list-group-item.bg-purple:active {
+  background-color: #3F377C;
+}
+#page-content-wrapper{
+  min-width: 100vw;
+}
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+#sidebar-wrapper .logo {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+/* || HOME PAGE */
+.pic{
+  padding: 0;
+  position: absolute;
+}
+.pic > img {
+  top: 0;
+  animation-name: fade_in;
+  animation-iteration-count: infinite;
+  animation-duration: 30s;
+  position: absolute;
+}
+/*For the 5 images a=the presentation time for one image and b=the duration for cross fading has been defined.
+    Total animation-duration is of course t=(a+b)*5
+
+    animation-delay = 5/n or = a+b
+
+    Percentage for keyframes:
+
+        0%
+        a/t*100%
+        (a+b)/t*100% = 1/5*100%
+        100%-(b/t*100%)
+        100%
+
+   See http://css3.bradshawenterprises.com/cfimg/#cfimg3
+    */
+.pic > .five {
+  animation-delay: 0s;
+}
+.pic > .four {
+  animation-delay: 6s;
+}
+.pic > .three {
+  animation-delay: 12s;
+}
+.pic > .two {
+  animation-delay: 18s;
+}
+.pic > .one {
+  animation-delay: 24s;
+}
+@keyframes fade_in {
+  0% {opacity:1;}
+  7% {opacity:1;}
+  20% {opacity:0;}
+  87% {opacity:0;}
+  100% {opacity:1;}
+}
+/* || CONTACT PAGE */
+.bg-contact{
+  background-image: url("../homepage-images/pic3.jpg");
+  background-repeat: repeat;
+  padding: 2%;
+}
+.contact {
+  background-color: rgba(187, 189, 193, 0.8);
+  box-sizing: border-box;
+  border-radius: 1rem;
+  height: 80%;
+  padding-left:1rem;
+}
+.form-control {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.form-group {
+  width: 80%;
+}
+.submit.btn {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+/* || CONTACT2 PAGE */
+
+.reply {
+  color: #322D6A;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 20vh;
+}
+
+/* || TESTIMONIAL PAGE */
+
+.bg-testimonials{
+  position:absolute;
+  padding: 2%;
+}
+.testimonials {
+  position: relative;
+  left: 10vw;
+  width: 80%;
+  padding-top:15vh;
+}
+.testimonials p {
+  color: #EECC61;
+  font-family: match;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.testimonial
+{
+  background-color: #F8F9Fa;
+  margin: 1rem;
+  box-sizing: border-box;
+  border-radius:0.5rem;
+  padding:0.5rem;
+  color: #322D6A;
+}
+
+
+
+
